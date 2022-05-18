@@ -1,0 +1,231 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500&display=swap');
+</style>
+
+*{
+    padding: 0;
+    margin: 0%;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+font-family: 'Poppins', sans-serif;
+    
+}
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+
+
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    padding: 0 4.8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 250, 250)
+    
+}
+.header .logo{
+    height: 3rem;
+
+
+}
+.navbar-lists{
+    display: flex;
+    gap: 2.9rem;
+    list-style: none;
+    /* background-color: #212529; */
+
+}
+.navbar-link:link,
+.navbar-link:visited{
+   display: inline-block; 
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 500;
+   color: #f885c4;
+   transition: all 0.3s;
+}
+.navbar-link:hover,
+.navbar-link:active{
+    color: rgb(228, 228, 239);
+}
+.section-hero,
+.section-services,
+{
+    padding: 9.6rem;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    
+}
+.hero{
+    height: 30vh;
+}
+.section-services{
+    background-color: aliceblue;
+
+}
+.section-hero p,
+.section-services p {
+    font-size: 3.2rem;
+}
+section-services2{
+    height: 50vh;
+    width: 100$;
+    position: relative;
+}
+.watsapp-btn{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    padding-right: 20px;
+}
+.mobil-navbar-btn{
+    display: none;    
+  background: transparent;
+  cursor: pointer;
+}
+.mobile-manu-icon{
+    width: 4rem;
+    height: 4rem;
+    color: rgb(216, 14, 51);
+}
+
+.mobile-manu-icon[name="close"]{
+       display: none;  
+} 
+/* responsive coad */
+@media(max-width:62em){
+    .mobil-navbar-btn{
+        display: block;
+        z-index: 999;
+        border: 3px solid;
+        background-color: #787e84;
+    }
+
+    .header .logo {
+        width: 40%;
+    }
+.navbar {
+       display: none;  
+    width: 40%;
+    height: 70vh;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     transform:translateX(100%);
+    transition:translatex: all 0.5s linear; 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: #787e84;
+
+}
+/* .chatbubbles{
+    width: 8rem;
+    height: 8rem;
+    background: var(--helper);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    color: red;
+    position: relative;
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+    border-radius: 5px; */
+
+ }
+ .watsapp-btn{
+    position: fixed;
+    right: 4%;
+    bottom: 10%;
+    display: flex;
+    align-items: centers;
+    cursor: pointer;
+ }
+ 
+ 
+.navbar-lists{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.active .navbar{
+    transform: translateX(0);
+    opacity: 1;
+     visibility: visible; 
+    pointer-events: auto;
+    
+}
+.active .mobil-navbar-btn .mobile-manu-icon[name="close"]{
+    display: block; 
+} 
+.active .mobil-navbar-btn .mobile-manu-icon[name="menu"]{
+    display: none; 
+} 
+/* .chatbubbles{
+    width: 8rem;
+    height: 8rem;
+    background: var(--helper);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    color: red;
+    position: relative;
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+    border-radius: 5px; */
+
+ }
+ .watsapp-btn{
+    position: fixed;
+    right: 4%;
+    bottom: 10%;
+ }
+ 
+ .wts{
+     height: 4srem;
+     width: 4rem;
+     position: absolute;
+     transform: translate(-50px,-50px);}
+}
+ @media (max-width:35em) {
+    .header{
+        padding: 0 2.4rem;
+    }
+
+    .header .logo{
+        width:60%;
+    } 
+ }
+ #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+ 
+ h3{
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
